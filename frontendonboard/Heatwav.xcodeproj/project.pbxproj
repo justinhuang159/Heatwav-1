@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D81DA57214F1C98007D2B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA56214F1C98007D2B24 /* AppDelegate.swift */; };
+		3D81DA59214F1C98007D2B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA58214F1C98007D2B24 /* ViewController.swift */; };
+		3D81DA5C214F1C98007D2B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA5A214F1C98007D2B24 /* Main.storyboard */; };
+		3D81DA5E214F1C9C007D2B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA5D214F1C9C007D2B24 /* Assets.xcassets */; };
+		3D81DA61214F1C9C007D2B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA5F214F1C9C007D2B24 /* LaunchScreen.storyboard */; };
+		3D81DA6C214F1C9D007D2B24 /* HeatwavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA6B214F1C9D007D2B24 /* HeatwavTests.swift */; };
+		3D81DA77214F1C9D007D2B24 /* HeatwavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA76214F1C9D007D2B24 /* HeatwavUITests.swift */; };
+		3D81DA85214F620F007D2B24 /* card1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA84214F620F007D2B24 /* card1.png */; };
+		3D81DA87214F6225007D2B24 /* card2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA86214F6225007D2B24 /* card2.png */; };
+		3D81DA8B214F6265007D2B24 /* card3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA8A214F6265007D2B24 /* card3.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D81DA68214F1C9D007D2B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D81DA4B214F1C98007D2B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D81DA52214F1C98007D2B24;
+			remoteInfo = Heatwav;
+		};
+		3D81DA73214F1C9D007D2B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D81DA4B214F1C98007D2B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D81DA52214F1C98007D2B24;
+			remoteInfo = Heatwav;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D81DA53214F1C98007D2B24 /* Heatwav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heatwav.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D81DA56214F1C98007D2B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D81DA58214F1C98007D2B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D81DA5B214F1C98007D2B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D81DA5D214F1C9C007D2B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D81DA60214F1C9C007D2B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D81DA62214F1C9C007D2B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D81DA67214F1C9D007D2B24 /* HeatwavTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatwavTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D81DA6B214F1C9D007D2B24 /* HeatwavTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatwavTests.swift; sourceTree = "<group>"; };
+		3D81DA6D214F1C9D007D2B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D81DA72214F1C9D007D2B24 /* HeatwavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatwavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D81DA76214F1C9D007D2B24 /* HeatwavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatwavUITests.swift; sourceTree = "<group>"; };
+		3D81DA78214F1C9D007D2B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D81DA84214F620F007D2B24 /* card1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card1.png; path = "../../../Downloads/card1_2018-09-17/card1.png"; sourceTree = "<group>"; };
+		3D81DA86214F6225007D2B24 /* card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card2.png; path = "../../../Downloads/card2_2018-09-17/card2.png"; sourceTree = "<group>"; };
+		3D81DA8A214F6265007D2B24 /* card3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card3.png; path = "../../../Downloads/card3_2018-09-17/card3.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D81DA50214F1C98007D2B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DA64214F1C9D007D2B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DA6F214F1C9D007D2B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D81DA4A214F1C98007D2B24 = {
+			isa = PBXGroup;
+			children = (
+				3D81DA55214F1C98007D2B24 /* Heatwav */,
+				3D81DA6A214F1C9D007D2B24 /* HeatwavTests */,
+				3D81DA75214F1C9D007D2B24 /* HeatwavUITests */,
+				3D81DA54214F1C98007D2B24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D81DA54214F1C98007D2B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D81DA53214F1C98007D2B24 /* Heatwav.app */,
+				3D81DA67214F1C9D007D2B24 /* HeatwavTests.xctest */,
+				3D81DA72214F1C9D007D2B24 /* HeatwavUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D81DA55214F1C98007D2B24 /* Heatwav */ = {
+			isa = PBXGroup;
+			children = (
+				3D81DA8A214F6265007D2B24 /* card3.png */,
+				3D81DA86214F6225007D2B24 /* card2.png */,
+				3D81DA84214F620F007D2B24 /* card1.png */,
+				3D81DA56214F1C98007D2B24 /* AppDelegate.swift */,
+				3D81DA58214F1C98007D2B24 /* ViewController.swift */,
+				3D81DA5A214F1C98007D2B24 /* Main.storyboard */,
+				3D81DA5D214F1C9C007D2B24 /* Assets.xcassets */,
+				3D81DA5F214F1C9C007D2B24 /* LaunchScreen.storyboard */,
+				3D81DA62214F1C9C007D2B24 /* Info.plist */,
+			);
+			path = Heatwav;
+			sourceTree = "<group>";
+		};
+		3D81DA6A214F1C9D007D2B24 /* HeatwavTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D81DA6B214F1C9D007D2B24 /* HeatwavTests.swift */,
+				3D81DA6D214F1C9D007D2B24 /* Info.plist */,
+			);
+			path = HeatwavTests;
+			sourceTree = "<group>";
+		};
+		3D81DA75214F1C9D007D2B24 /* HeatwavUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D81DA76214F1C9D007D2B24 /* HeatwavUITests.swift */,
+				3D81DA78214F1C9D007D2B24 /* Info.plist */,
+			);
+			path = HeatwavUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D81DA52214F1C98007D2B24 /* Heatwav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D81DA7B214F1C9D007D2B24 /* Build configuration list for PBXNativeTarget "Heatwav" */;
+			buildPhases = (
+				3D81DA4F214F1C98007D2B24 /* Sources */,
+				3D81DA50214F1C98007D2B24 /* Frameworks */,
+				3D81DA51214F1C98007D2B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Heatwav;
+			productName = Heatwav;
+			productReference = 3D81DA53214F1C98007D2B24 /* Heatwav.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D81DA66214F1C9D007D2B24 /* HeatwavTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D81DA7E214F1C9D007D2B24 /* Build configuration list for PBXNativeTarget "HeatwavTests" */;
+			buildPhases = (
+				3D81DA63214F1C9D007D2B24 /* Sources */,
+				3D81DA64214F1C9D007D2B24 /* Frameworks */,
+				3D81DA65214F1C9D007D2B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D81DA69214F1C9D007D2B24 /* PBXTargetDependency */,
+			);
+			name = HeatwavTests;
+			productName = HeatwavTests;
+			productReference = 3D81DA67214F1C9D007D2B24 /* HeatwavTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D81DA71214F1C9D007D2B24 /* HeatwavUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D81DA81214F1C9D007D2B24 /* Build configuration list for PBXNativeTarget "HeatwavUITests" */;
+			buildPhases = (
+				3D81DA6E214F1C9D007D2B24 /* Sources */,
+				3D81DA6F214F1C9D007D2B24 /* Frameworks */,
+				3D81DA70214F1C9D007D2B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D81DA74214F1C9D007D2B24 /* PBXTargetDependency */,
+			);
+			name = HeatwavUITests;
+			productName = HeatwavUITests;
+			productReference = 3D81DA72214F1C9D007D2B24 /* HeatwavUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D81DA4B214F1C98007D2B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Stanley Zeng";
+				TargetAttributes = {
+					3D81DA52214F1C98007D2B24 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3D81DA66214F1C9D007D2B24 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3D81DA52214F1C98007D2B24;
+					};
+					3D81DA71214F1C9D007D2B24 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3D81DA52214F1C98007D2B24;
+					};
+				};
+			};
+			buildConfigurationList = 3D81DA4E214F1C98007D2B24 /* Build configuration list for PBXProject "Heatwav" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D81DA4A214F1C98007D2B24;
+			productRefGroup = 3D81DA54214F1C98007D2B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D81DA52214F1C98007D2B24 /* Heatwav */,
+				3D81DA66214F1C9D007D2B24 /* HeatwavTests */,
+				3D81DA71214F1C9D007D2B24 /* HeatwavUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D81DA51214F1C98007D2B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D81DA61214F1C9C007D2B24 /* LaunchScreen.storyboard in Resources */,
+				3D81DA8B214F6265007D2B24 /* card3.png in Resources */,
+				3D81DA87214F6225007D2B24 /* card2.png in Resources */,
+				3D81DA5E214F1C9C007D2B24 /* Assets.xcassets in Resources */,
+				3D81DA5C214F1C98007D2B24 /* Main.storyboard in Resources */,
+				3D81DA85214F620F007D2B24 /* card1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DA65214F1C9D007D2B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DA70214F1C9D007D2B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D81DA4F214F1C98007D2B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D81DA59214F1C98007D2B24 /* ViewController.swift in Sources */,
+				3D81DA57214F1C98007D2B24 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DA63214F1C9D007D2B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D81DA6C214F1C9D007D2B24 /* HeatwavTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DA6E214F1C9D007D2B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D81DA77214F1C9D007D2B24 /* HeatwavUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D81DA69214F1C9D007D2B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D81DA52214F1C98007D2B24 /* Heatwav */;
+			targetProxy = 3D81DA68214F1C9D007D2B24 /* PBXContainerItemProxy */;
+		};
+		3D81DA74214F1C9D007D2B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D81DA52214F1C98007D2B24 /* Heatwav */;
+			targetProxy = 3D81DA73214F1C9D007D2B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D81DA5A214F1C98007D2B24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D81DA5B214F1C98007D2B24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D81DA5F214F1C9C007D2B24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D81DA60214F1C9C007D2B24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D81DA79214F1C9D007D2B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D81DA7A214F1C9D007D2B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D81DA7C214F1C9D007D2B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Heatwav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stanley.Heatwav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D81DA7D214F1C9D007D2B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Heatwav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stanley.Heatwav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D81DA7F214F1C9D007D2B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeatwavTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stanley.HeatwavTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heatwav.app/Heatwav";
+			};
+			name = Debug;
+		};
+		3D81DA80214F1C9D007D2B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeatwavTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stanley.HeatwavTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heatwav.app/Heatwav";
+			};
+			name = Release;
+		};
+		3D81DA82214F1C9D007D2B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeatwavUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stanley.HeatwavUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Heatwav;
+			};
+			name = Debug;
+		};
+		3D81DA83214F1C9D007D2B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeatwavUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stanley.HeatwavUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Heatwav;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D81DA4E214F1C98007D2B24 /* Build configuration list for PBXProject "Heatwav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D81DA79214F1C9D007D2B24 /* Debug */,
+				3D81DA7A214F1C9D007D2B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D81DA7B214F1C9D007D2B24 /* Build configuration list for PBXNativeTarget "Heatwav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D81DA7C214F1C9D007D2B24 /* Debug */,
+				3D81DA7D214F1C9D007D2B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D81DA7E214F1C9D007D2B24 /* Build configuration list for PBXNativeTarget "HeatwavTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D81DA7F214F1C9D007D2B24 /* Debug */,
+				3D81DA80214F1C9D007D2B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D81DA81214F1C9D007D2B24 /* Build configuration list for PBXNativeTarget "HeatwavUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D81DA82214F1C9D007D2B24 /* Debug */,
+				3D81DA83214F1C9D007D2B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D81DA4B214F1C98007D2B24 /* Project object */;
+}
