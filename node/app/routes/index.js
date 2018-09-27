@@ -1,5 +1,5 @@
-const addArtist = require('./routes');
+const location = require('./routes');
 
 module.exports = function (app, db) {
-  addArtist(app, db);
+  locationion(app, db);
 }

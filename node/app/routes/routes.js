@@ -8,8 +8,22 @@ module.exports = function (app, db) {
 	});
 
 	// adds a location to the database
-	app.post('/locations', (req, res) => {
+	app.post('/locations:id', (req, res) => {
+		const id = req.params.id;
 		console.log(req.body);
-		res.send('location added');
+		res.send('location added as: ' + id);
+	});
+
+	// removes a lcation from the database
+	app.delete('/locations:id', (req, res) => {
+		const id = req.params.id;
+		res.send('location removed as: ' + req.params.id);
+	});
+
+	// updates a location in the database
+	app.puts('/locations:id', (req, res) => {
+		const id = req.params.id;
+		console.log(req.body);
+		res.send('location updated as: ' + req.params.id);
 	});
 };
