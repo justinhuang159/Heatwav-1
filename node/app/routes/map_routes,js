@@ -1,0 +1,7 @@
+modules.exports = function(db, app) {
+	app.get('/map', (req, res) => {
+		const radius = (req.query.radius) ? req.query.radius : 10;
+		console.log('specified search radius was: ' + radius);
+		res.send(radius);
+	});
+}
