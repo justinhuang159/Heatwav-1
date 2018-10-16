@@ -27,11 +27,6 @@ const UserSchema =  new mongoose.Schema({
 		// },
 		index: false
 	},
-	popularityCount: {
-		type: Number,
-		min: [0, "You can't have negative popularity."],
-		index: false
-	},
 	isArtist: {
 		type: Boolean,
 		required: [true, 'Please indicate whether you are an artist.'],
@@ -46,6 +41,11 @@ const UserSchema =  new mongoose.Schema({
 		// 	message: props => `${props.value} is not a valid Soundcloud link.`
 		// },
 		index: true
+	},
+	popularityCount: {
+		type: Number,
+		min: [0, "You can't have negative popularity."],
+		index: false
 	}
 });
 
