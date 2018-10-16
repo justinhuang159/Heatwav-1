@@ -21,9 +21,23 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
 	require('./app/routes')(app, db);
 
-	app.get("/test/:id", (req, res) => {
-		res.send(req.params);
-	})
+	// testing stuff
+	// app.get("/test/:id", (req, res) => {
+	// 	res.send(req.params);
+	// });
+
+	// const testSchema = new mongoose.Schema({
+	// 	name: String
+	// });
+
+	// const Test = mongoose.model('Test', testSchema);
+	// const test = new Test({ name: "tester321" });
+	// console.log(test.name);
+
+	// test.save(function (err, test) {
+	// 	if (err) return console.error(err);
+	// });
+
 
 	const port = 3000;
 	app.listen(port, () => {
