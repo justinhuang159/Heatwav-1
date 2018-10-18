@@ -1,20 +1,23 @@
 const mongoose = require('mongoose');
+const uniqueValidator = require('mongoose-unique-validator');
 const UserSchema =  new mongoose.Schema({
 	username: {
 		type: String,
 		minlength: [1, 'username cannot be empty.'],
 		required: [true, 'username is required.'],
+		unique: true,
 		index: true
 	},
 	phone: {
 		type: String,
-		// validate: {
-		// 	validator: function(v) {
-		// 		return /\d{3}-\d{3}-\d{4}/.test(v);
-		// 	},
-		// 	message: props => `${props.value} is not a valid phone number!`
-		// },
+		validate: {
+			validator: function(v) {
+				return /\d{3}-\d{3}-\d{4}/.test(v);
+			},
+			message: props => `${props.value} is not a valid phone number!`
+		},
 		required: [true, 'User phone number is required.'],
+		unique: true,
 		index: true
 	},
 	joinDate: {
@@ -34,12 +37,15 @@ const UserSchema =  new mongoose.Schema({
 	},
 	soundCloud: {
 		type: String,
-		// validate: {
-		// 	validator: function(v) {
-		// 		return /^(https:\/\/soundcloud.com\/)/;
-		// 	},
-		// 	message: props => `${props.value} is not a valid Soundcloud link.`
-		// },
+		validate: {
+			validator: function(v) {
+				return /^(https:\/\/soundcloud.com\/)/;
+			},
+			message: props => `${props.value} is not a valid Soundcloud link.`
+		},
+		required: function() {
+			return this.isArtist;
+		},
 		index: true
 	},
 	popularityCount: {
@@ -49,4 +55,5 @@ const UserSchema =  new mongoose.Schema({
 	}
 });
 
+UserSchema.plugin(uniqueValidator);
 module.exports = mongoose.model('users', UserSchema);

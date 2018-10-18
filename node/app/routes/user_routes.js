@@ -7,7 +7,8 @@ module.exports = function(app, db) {
 
 	app.post('/user/:id', async (req, res) => {
 		const username = req.params.id;
-		const { phone, isArtist, soundCloud, joinDate } = req.body;
+		const joinDate = new Date();
+		const { phone, isArtist, soundCloud } = req.body;
 		const user = new User(
 			{ 
 				username: username, 
