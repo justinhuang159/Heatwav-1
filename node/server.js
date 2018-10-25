@@ -21,7 +21,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
 	require('./app/routes')(app, db);
 
-	// testing stuff
+	// for testing db connection
 	// app.get("/test/:id", (req, res) => {
 	// 	res.send(req.params);
 	// });
