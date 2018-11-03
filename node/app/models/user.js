@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
-const UserSchema =  new mongoose.Schema({
+
+const UserSchema = new mongoose.Schema({
 	username: {
 		type: String,
-		minlength: [1, 'username cannot be empty.'],
-		required: [true, 'username is required.'],
+		minlength: [1, 'Username cannot be empty.'],
+		required: [true, 'Username is required.'],
 		unique: true,
 		index: true
 	},
@@ -16,7 +17,7 @@ const UserSchema =  new mongoose.Schema({
 			},
 			message: props => `${props.value} is not a valid phone number!`
 		},
-		required: [true, 'User phone number is required.'],
+		required: [true, 'User phone-number is required.'],
 		unique: true,
 		index: true
 	},

@@ -7,15 +7,12 @@ module.exports = function(app, db) {
 		try {
 			const user = await User.findOne({ username: username });
 			if (!user) {
-				res.status(404).send(new MyError('User not found error: ' + username));
+				res.status(404).send({ response: 'User not found error: ' + username });
 			} else {
-				res.status(200).send(JSON.stringify(user));
+				res.status(200).send({ response: JSON.stringify(user) });
 			}
 		} catch (err) {
-			if (err.name === 'MongoError') {
-				res.status(409).send('There was an issue saving to db: ' + err.message);
-			}
-			res.status(500).send('Unknown Server Error: ' + err.message);
+			res.status(500).send({ response: 'Unknown Server Error: ' + err.message });
 		}
 	});
 
@@ -34,14 +31,12 @@ module.exports = function(app, db) {
 			});
 		try {
 			const newUser = await user.save();
-			res.status(201).send({
-				response: 'New user created as username: ' + username
-			});
+			res.status(201).send({ response: 'New user created as username: ' + username });
 		} catch (err) {
-			if (err.name === 'MongoError') {
-				res.status(409).send('There was an issue saving to db: ' + err.message);
+			if (err.name === 'MongoError' && err.code === 11000) {
+				res.status(409).send({ response: 'Duplicate key error:: ' + err.message });
 			}
-			res.status(500).send(new MyError('Unknown Server Error'));
+			res.status(500).send({ response: 'Unknown Server Error' });
 		}
 	});
 
@@ -50,18 +45,13 @@ module.exports = function(app, db) {
 		try {
 			const deletedUser = await User.deleteOne({ username: username });
 			if (!deletedUser) {
-				res.status(409).send('There was an issue saving to db: ' + err.message);
+				res.status(404).send({ response: 'User not found error: ' + username });
 			} else {
-				res.status(200).send({
-				response: 'Deleted user: ' + username
-			});
+				res.status(200).send({ response: 'Deleted user: ' + username });
 			}
 			
 		} catch (err) {
-			if (err.name === 'MongoError') {
-				res.status(409).send('There was an issue saving to db: ' + err.message);
-			}
-			res.status(500).send('Unknown Server Error: ' + err.message);
+			res.status(500).send({ response: 'Unknown Server Error: ' + err.message });
 		}
 	});
 
@@ -71,7 +61,6 @@ module.exports = function(app, db) {
 		const username = req.params.id;
 		const { phone, isArtist, soundCloud } = req.body;
 		let options = {};
-		console.log(phone);
 		if (phone) {
 			options.phone = phone;
 		}
@@ -84,15 +73,12 @@ module.exports = function(app, db) {
 		try {
 			const updatedUser = await User.findOneAndUpdate({ username: username}, { $set: options }, { runValidators: true, context: 'query' });
 			if (!updatedUser) {
-				res.status(404).send('User not found error: ' + username);
+				res.status(404).send({ response: 'User not found error: ' + username });
 			} else {
-				res.status(200).send(JSON.stringify(updatedUser));
+				res.status(200).send({ response: JSON.stringify(updatedUser) });
 			}
 		} catch (err) {
-			if (err.name === 'MongoError') {
-				res.status(409).send('There was an issue saving to db: ' + err.message);
-			}
-			res.status(500).send('Unknown Server Error: ' + err.message);
+			res.status(500).send({ response: 'Unknown Server Error: ' + err.message });
 		}
 	})
 
