@@ -8,8 +8,8 @@ const PointSchema = new mongoose.Schema({
 	},
 	coordinates: {
 		type: [Number],
-		required: [true, 'Please specify a coordinate consisting of lon then lat.']
-	}
+		required: [true, 'Please specify a coordinate consisting of longitude then latitude.']
+	},
 });
 
 module.exports = { schema: PointSchema, model: mongoose.model('points', PointSchema) };

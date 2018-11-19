@@ -9,17 +9,24 @@ module.exports = function(app, db) {
 			if (!user) {
 				res.status(404).send({ response: 'User not found error: ' + username });
 			} else {
-				res.status(200).send({ response: JSON.stringify(user) });
+				res.status(200).send({ response: user });
 			}
 		} catch (err) {
 			res.status(500).send({ response: 'Unknown Server Error: ' + err.message });
 		}
 	});
 
+	// takes username as param and phone and isArtist and or soundCloud as queries
 	app.post('/user/:id', async (req, res) => {
 		const username = req.params.id;
 		const joinDate = new Date();
-		const { phone, isArtist, soundCloud } = req.body;
+		let soundCloud = req.body.soundCloud;
+		if (!soundCloud) {
+			soundCloud = null;
+		}
+
+		const { phone, isArtist } = req.body;
+		
 		const user = new User(
 			{ 
 				username: username, 
@@ -75,7 +82,7 @@ module.exports = function(app, db) {
 			if (!updatedUser) {
 				res.status(404).send({ response: 'User not found error: ' + username });
 			} else {
-				res.status(200).send({ response: JSON.stringify(updatedUser) });
+				res.status(200).send({ response: updatedUser });
 			}
 		} catch (err) {
 			res.status(500).send({ response: 'Unknown Server Error: ' + err.message });

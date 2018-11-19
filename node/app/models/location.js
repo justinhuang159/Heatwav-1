@@ -12,9 +12,11 @@ const LocationSchema = new mongoose.Schema({
 	},
 	loc: {
 		type: PointSchema,
-		required: [true, 'Please specify a location.']
+		required: [true, 'Please specify a location.'],
+		index: '2dsphere'
 	}
 });
 
+LocationSchema.index({ "loc": "2dsphere" });
 LocationSchema.plugin(uniqueValidator);
 module.exports = mongoose.model('locations', LocationSchema);
