@@ -74,4 +74,4 @@ module.exports = function (app, db) {
 			res.status(500).send({ response: 'Unknown Server Error: ' + err.message });
 		}
 	});
-};
+}

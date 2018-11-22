@@ -19,7 +19,8 @@ mongoose.connect(dbConfig.url, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
-	require('./app/routes')(app, db);
+	const routes = require('./app/routes');
+	routes(app, db);
 
 	// for testing db connection
 	// app.get("/test/:id", (req, res) => {

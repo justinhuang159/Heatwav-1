@@ -48,11 +48,6 @@ const UserSchema = new mongoose.Schema({
 			return this.isArtist;
 		},
 		index: true
-	},
-	popularityCount: {
-		type: Number,
-		min: [0, "You can't have negative popularity."],
-		index: false
 	}
 });
 
