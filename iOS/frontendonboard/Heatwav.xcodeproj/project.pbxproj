@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D14729821B317DF0021B67D /* Welcome2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14729721B317DF0021B67D /* Welcome2.swift */; };
+		3D14729A21B319A30021B67D /* Welcome3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14729921B319A30021B67D /* Welcome3.swift */; };
+		3D14729C21B319EC0021B67D /* Welcome4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14729B21B319EC0021B67D /* Welcome4.swift */; };
+		3D14729E21B31A2C0021B67D /* Main1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14729D21B31A2C0021B67D /* Main1.swift */; };
+		3D1472A021B31B640021B67D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14729F21B31B640021B67D /* Location.swift */; };
 		3D81DA57214F1C98007D2B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA56214F1C98007D2B24 /* AppDelegate.swift */; };
-		3D81DA59214F1C98007D2B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA58214F1C98007D2B24 /* ViewController.swift */; };
+		3D81DA59214F1C98007D2B24 /* OBView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA58214F1C98007D2B24 /* OBView1.swift */; };
 		3D81DA5C214F1C98007D2B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA5A214F1C98007D2B24 /* Main.storyboard */; };
 		3D81DA5E214F1C9C007D2B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA5D214F1C9C007D2B24 /* Assets.xcassets */; };
 		3D81DA61214F1C9C007D2B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA5F214F1C9C007D2B24 /* LaunchScreen.storyboard */; };
 		3D81DA6C214F1C9D007D2B24 /* HeatwavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA6B214F1C9D007D2B24 /* HeatwavTests.swift */; };
 		3D81DA77214F1C9D007D2B24 /* HeatwavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DA76214F1C9D007D2B24 /* HeatwavUITests.swift */; };
-		3D81DA85214F620F007D2B24 /* card1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA84214F620F007D2B24 /* card1.png */; };
-		3D81DA87214F6225007D2B24 /* card2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA86214F6225007D2B24 /* card2.png */; };
-		3D81DA8B214F6265007D2B24 /* card3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DA8A214F6265007D2B24 /* card3.png */; };
+		3DEC57AC216816C50015759C /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DEC57AB216816C50015759C /* Keys.plist */; };
+		3DEC57B0216817F60015759C /* OBView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC57AF216817F60015759C /* OBView5.swift */; };
+		3DEC57B321681C810015759C /* OBView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC57B221681C810015759C /* OBView4.swift */; };
+		3DEC57DB218017990015759C /* OBView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC57DA218017990015759C /* OBView2.swift */; };
+		3DEC57DD218022C80015759C /* OBView5b.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC57DC218022C80015759C /* OBView5b.swift */; };
+		3DEC57DF2183BB690015759C /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC57DE2183BB690015759C /* VerifyAPI.swift */; };
+		3DEC57E12183BC650015759C /* Welcome1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC57E02183BC650015759C /* Welcome1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D14729721B317DF0021B67D /* Welcome2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome2.swift; sourceTree = "<group>"; };
+		3D14729921B319A30021B67D /* Welcome3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome3.swift; sourceTree = "<group>"; };
+		3D14729B21B319EC0021B67D /* Welcome4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome4.swift; sourceTree = "<group>"; };
+		3D14729D21B31A2C0021B67D /* Main1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main1.swift; sourceTree = "<group>"; };
+		3D14729F21B31B640021B67D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3D81DA53214F1C98007D2B24 /* Heatwav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heatwav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D81DA56214F1C98007D2B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D81DA58214F1C98007D2B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D81DA58214F1C98007D2B24 /* OBView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBView1.swift; sourceTree = "<group>"; };
 		3D81DA5B214F1C98007D2B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D81DA5D214F1C9C007D2B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D81DA60214F1C9C007D2B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,9 +64,13 @@
 		3D81DA72214F1C9D007D2B24 /* HeatwavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatwavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D81DA76214F1C9D007D2B24 /* HeatwavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatwavUITests.swift; sourceTree = "<group>"; };
 		3D81DA78214F1C9D007D2B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D81DA84214F620F007D2B24 /* card1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card1.png; path = "../../../Downloads/card1_2018-09-17/card1.png"; sourceTree = "<group>"; };
-		3D81DA86214F6225007D2B24 /* card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card2.png; path = "../../../Downloads/card2_2018-09-17/card2.png"; sourceTree = "<group>"; };
-		3D81DA8A214F6265007D2B24 /* card3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card3.png; path = "../../../Downloads/card3_2018-09-17/card3.png"; sourceTree = "<group>"; };
+		3DEC57AB216816C50015759C /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		3DEC57AF216817F60015759C /* OBView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBView5.swift; sourceTree = "<group>"; };
+		3DEC57B221681C810015759C /* OBView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBView4.swift; sourceTree = "<group>"; };
+		3DEC57DA218017990015759C /* OBView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBView2.swift; sourceTree = "<group>"; };
+		3DEC57DC218022C80015759C /* OBView5b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBView5b.swift; sourceTree = "<group>"; };
+		3DEC57DE2183BB690015759C /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
+		3DEC57E02183BC650015759C /* Welcome1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +121,24 @@
 		3D81DA55214F1C98007D2B24 /* Heatwav */ = {
 			isa = PBXGroup;
 			children = (
-				3D81DA8A214F6265007D2B24 /* card3.png */,
-				3D81DA86214F6225007D2B24 /* card2.png */,
-				3D81DA84214F620F007D2B24 /* card1.png */,
 				3D81DA56214F1C98007D2B24 /* AppDelegate.swift */,
-				3D81DA58214F1C98007D2B24 /* ViewController.swift */,
+				3D81DA58214F1C98007D2B24 /* OBView1.swift */,
 				3D81DA5A214F1C98007D2B24 /* Main.storyboard */,
 				3D81DA5D214F1C9C007D2B24 /* Assets.xcassets */,
 				3D81DA5F214F1C9C007D2B24 /* LaunchScreen.storyboard */,
 				3D81DA62214F1C9C007D2B24 /* Info.plist */,
+				3DEC57AB216816C50015759C /* Keys.plist */,
+				3DEC57AF216817F60015759C /* OBView5.swift */,
+				3DEC57B221681C810015759C /* OBView4.swift */,
+				3DEC57DA218017990015759C /* OBView2.swift */,
+				3DEC57DC218022C80015759C /* OBView5b.swift */,
+				3DEC57DE2183BB690015759C /* VerifyAPI.swift */,
+				3DEC57E02183BC650015759C /* Welcome1.swift */,
+				3D14729721B317DF0021B67D /* Welcome2.swift */,
+				3D14729921B319A30021B67D /* Welcome3.swift */,
+				3D14729B21B319EC0021B67D /* Welcome4.swift */,
+				3D14729D21B31A2C0021B67D /* Main1.swift */,
+				3D14729F21B31B640021B67D /* Location.swift */,
 			);
 			path = Heatwav;
 			sourceTree = "<group>";
@@ -238,12 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DEC57AC216816C50015759C /* Keys.plist in Resources */,
 				3D81DA61214F1C9C007D2B24 /* LaunchScreen.storyboard in Resources */,
-				3D81DA8B214F6265007D2B24 /* card3.png in Resources */,
-				3D81DA87214F6225007D2B24 /* card2.png in Resources */,
 				3D81DA5E214F1C9C007D2B24 /* Assets.xcassets in Resources */,
 				3D81DA5C214F1C98007D2B24 /* Main.storyboard in Resources */,
-				3D81DA85214F620F007D2B24 /* card1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +293,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D81DA59214F1C98007D2B24 /* ViewController.swift in Sources */,
+				3D14729E21B31A2C0021B67D /* Main1.swift in Sources */,
+				3DEC57B321681C810015759C /* OBView4.swift in Sources */,
+				3D81DA59214F1C98007D2B24 /* OBView1.swift in Sources */,
+				3DEC57DD218022C80015759C /* OBView5b.swift in Sources */,
+				3D14729C21B319EC0021B67D /* Welcome4.swift in Sources */,
+				3DEC57B0216817F60015759C /* OBView5.swift in Sources */,
+				3D1472A021B31B640021B67D /* Location.swift in Sources */,
+				3DEC57DB218017990015759C /* OBView2.swift in Sources */,
+				3DEC57DF2183BB690015759C /* VerifyAPI.swift in Sources */,
+				3D14729A21B319A30021B67D /* Welcome3.swift in Sources */,
+				3DEC57E12183BC650015759C /* Welcome1.swift in Sources */,
+				3D14729821B317DF0021B67D /* Welcome2.swift in Sources */,
 				3D81DA57214F1C98007D2B24 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
